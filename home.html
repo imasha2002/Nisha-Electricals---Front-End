@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<title>VOLTAGE</title>
+	<link rel="stylesheet" href="stylehome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+	<div class="header">
+	<div class="container">
+	<div class="navbar">
+		<div class="logo">
+			<!--logo-->
+			<img src="volt2.jpeg" width="300px" >
+		</div>
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="shop_products.php">Products</a></li>
+				<li><a href="">Profile</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+				<a href="cart.php" class="cart"><i class="fa-solid fa-cart-shopping"></i></a>
+			</ul>
+		</nav>
+	</div>
+		<div class="row">
+			<div class="col-2">
+				<h1>Best marketplace for your electronic products</h1>
+				<a href="" class="btn">Explore Now</a>
+			</div>
+			<div class="col-2">
+				<img src="Wallpaper.jpeg">
+			</div>
+		</div>
+	</div> 
+	</div>
+	<div class="categories">
+		<div class="small-container">
+		<div class="row">
+			<div class="col-3">
+				<img src="images/led-cat.jpeg">
+			</div>
+			<div class="col-3">
+				<img src="images/panel-light-cat.jpeg">
+			</div>
+			<div class="col-3">
+				<img src="images/headphone-cat.jpeg" height="310px">
+			</div>
+		</div>
+		</div>
+	</div>
+	<div class="small-container">
+		<h2 class="title">Featured products</h2>
+		<div class="row">
+			<div class="col-4">
+				<img src="images/switch-feature.jpeg">
+				<h4>Wireman infinity 10 Amp. 3 Gang 2 way switch - White</h4>
+				<p>LKR 1400</p>
+			</div>
+			<div class="col-4">
+				<img src="images/wifi-light-feature.jpeg" height="210px">
+				<h4>Smart WIFI bulb 9W LED</h4>
+				<p>LKR 6000</p>
+			</div>
+			<div class="col-4">
+				<img src="images/panel-light-feature.jpeg">
+				<h4>Orange LED Panel light 24W - Square frame - Surface Warm White 3000K with Driver unit</h4>
+				<p>LKR 5500</p>
+			</div>
+			<div class="col-4">
+				<img src="images/light-feature.jpeg">
+				<h4>Orange LED flood light 30W Outdoor Light IP66 Standard - Daylight 6500K</h4>
+				<p>LKR 10400</p>
+			</div>
+		</div>
+       
+		 <!--
+      - BANNER
+    -->
+
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="bulbbanner.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="jbl banner.jpeg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="headphone2.jpeg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<br>
+
+
+
+	</div>
+	
+	
+		<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+	
+</body>
+</html>
