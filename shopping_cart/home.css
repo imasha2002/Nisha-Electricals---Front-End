@@ -1,0 +1,87 @@
+
+body {
+    background: url('image/pexels-zhangkaiyv-1139556.jpg') no-repeat center center fixed; /* Update with your image */
+    background-size: cover;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+header {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for text readability */
+    padding: 20px;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+.product-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.product {
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.product:hover {
+    transform: scale(1.05); /* Zoom in on hover */
+}
+.product img {
+    width: 150px;
+    height: 150px;
+}
+.category-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.category {
+    text-align: center;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+.category:hover {
+    transform: scale(1.1); /* Zoom in on hover */
+}
+footer {
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 10px;
+}
+.newsletter {
+    text-align: center;
+    padding: 20px;
+}
+.newsletter input[type='email'] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.newsletter button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffcc00;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.newsletter button:hover {
+    background-color: #cc9900;
+}
